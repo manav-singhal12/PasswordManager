@@ -114,7 +114,7 @@ const Manager = () => {
             <ToastContainer />
             <div className="md:container bg-purple-200  mx-auto p-5 ">
                 <div className="heading">
-                    <h1 className='font-bold rounded-2xl text-center text-2xl'>PassOPS</h1>
+                    <h1 className='font-bold rounded-2xl text-center text-2xl'>PassMaps</h1>
                     <p className='my-1 text-center'>Your Own password Manager</p>
                 </div>
                 <div className="inputs ">
