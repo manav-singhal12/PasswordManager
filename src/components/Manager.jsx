@@ -55,6 +55,7 @@ const Manager = () => {
         navigator}
         else{
             toast("Error : Password not saved")
+            console.log(error)
         }
     }
     const editpassword =(id) => {
@@ -155,8 +156,8 @@ const Manager = () => {
                             {passwordArray.map((item, index) => {
                                 return <tr key={index}>
                                     <td><div className='flex justify-between w-full px-10 py-1'><a href={item.site} target='_blank'>{item.site}</a><span onClick={() => { copytext(item.site) }} className='cursor-pointer'><i class="fa-solid fa-copy"></i></span></div></td>
-                                    <td><div className='flex justify-between w-full px-10 py-1'><a>{item.site}</a><span onClick={() => { copytext(item.username) }} className='cursor-pointer'><i class="fa-solid fa-copy"></i></span></div></td>
-                                    <td><div className='flex justify-between w-full px-12 py-1'><a>{item.site}</a><span onClick={() => { copytext(item.password) }} className='cursor-pointer'><i class="fa-solid fa-copy"></i></span></div></td>
+                                    <td><div className='flex justify-between w-full px-10 py-1'><a>{item.username}</a><span onClick={() => { copytext(item.username) }} className='cursor-pointer'><i class="fa-solid fa-copy"></i></span></div></td>
+                                    <td><div className='flex justify-between w-full px-12 py-1'><a>{item.password}</a><span onClick={() => { copytext(item.password) }} className='cursor-pointer'><i class="fa-solid fa-copy"></i></span></div></td>
                                     <td><div className="actions flex ">
                                         <div onClick={() => { editpassword(item.id) }} className="edit cursor-pointer"><i class="fa-solid fa-pen-to-square"></i></div>
                                         <div onClick={() => { deletepassword(item.id) }} className="delete cursor-pointer"><lord-icon
